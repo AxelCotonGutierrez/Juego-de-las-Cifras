@@ -1,7 +1,7 @@
-# Juego para aprender a usar el Sistema de Numeración Decimal
+# Juego para aprender a usar el Sistema de Numeración Decimal 2
 
 
-![Juego del Sistema Numérico Decimal](https://axelcotongutierrez.github.io/learningmathematicas/assets/images//posts/SND/J01SND.jpg)
+![Juego del Sistema Numérico Decimal](https://axelcotongutierrez.github.io/learningmathematicas/assets/images//posts/SND/J02SND.jpg)
 
 Dentro del blog: https://axelcotongutierrez.github.io/learningmathematicas/
 
@@ -11,7 +11,7 @@ Juego para ESO, ESPA o ESPAD para aprender a usar el Sistema Numérico Decimal
 
 Puedes probar el juego en esta url:
 
-https://axelcotongutierrez.github.io/SistemaNumericoDecimal/
+https://github.com/AxelCotonGutierrez/Juego-de-las-Cifras
 
 ¡Prepárate para una emocionante aventura de aprendizaje en nuestro juego sobre el Sistema de Numeración Decimal!
 
