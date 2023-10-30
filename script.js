@@ -7,8 +7,10 @@ let currentQuestion = null;
 
 // Función para generar una pregunta aleatoria
 function generateRandomQuestion() {
-    // Genera un número aleatorio entre 1 y 10^maxZeros
-    const maxNumber = Math.pow(10, maxZeros) - 1;
+    // Calcula el número máximo basado en el exponente (maxZeros)
+    const maxNumber = Math.pow(10, maxZeros + 1) - 1;
+
+    // Genera un número aleatorio entre 1 y el número máximo
     const number = Math.floor(Math.random() * maxNumber) + 1;
 
     // Convierte el número en una cadena para trabajar con las cifras
@@ -23,10 +25,10 @@ function generateRandomQuestion() {
     }
 
     // Obtiene el exponente (posición de cifra) en la posición seleccionada
-    const exponent = digitPosition + 1;
+    const exponent = maxZeros - digitPosition;
 
     // Obtiene la cifra en la posición seleccionada
-    const digit = parseInt(numberStr.charAt(numberStr.length - exponent));
+    const digit = parseInt(numberStr.charAt(numberStr.length - digitPosition - 1));
 
     // Construye la pregunta basada en la posición de la cifra
     const unit = units[digitPosition];
@@ -34,6 +36,7 @@ function generateRandomQuestion() {
 
     return { question, answer: digit };
 }
+
 
 // Función para dar formato al número con espacios de mil
 function formatNumberWithSpaces(number) {
